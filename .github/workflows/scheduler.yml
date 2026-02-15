@@ -8,10 +8,10 @@ on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   schedule:
     - cron: "*/10 * * * *"
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  #push:
+    #branches: [ "main" ]
+  #pull_request:
+    #branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -32,8 +32,4 @@ jobs:
       - name: Run a scheduled task
         run: echo This job runs on a schedule
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: echo cron job successful
-          echo Add other actions to build,
-          echo test, and deploy your project.
+  
